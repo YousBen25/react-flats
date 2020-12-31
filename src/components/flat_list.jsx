@@ -8,7 +8,7 @@ const FlatList = (props) => {
         <Flat
           flat={flat}
           key={flat.lat}
-          selected={flat.name === props.selectedFlat.name}
+          selected={flat.name === (props.selectedFlat ? props.selectedFlat.name : null)}
           index={index}
           selectFlat={props.selectFlat}
         />
